@@ -40,5 +40,5 @@ jobs:
       with:
         url: https://${{ env.AZURE_WEBAPP_NAME }}-${{ inputs.environment }}.azurewebsites.net/|https://${{ env.AZURE_WEBAPP_NAME }}-${{ inputs.environment }}.azurewebsites.net/user/rob-derosa
         follow-redirect: no
-        max-attempts: 3
+        max-attempts: 30
         retry-delay: 5s
