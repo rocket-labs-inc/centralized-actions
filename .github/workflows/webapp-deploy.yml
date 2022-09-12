@@ -16,6 +16,7 @@ env:
 jobs:
   webapp-deploy:
     name: 📦 Webapp Deploy - ${{ inputs.environment }}
+    continue-on-error: false
     runs-on: ubuntu-latest
     environment:
       name: ${{ inputs.environment }}
