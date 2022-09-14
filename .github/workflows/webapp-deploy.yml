@@ -16,6 +16,7 @@ jobs:
     continue-on-error: false
     runs-on: ubuntu-latest
     environment:
+      # Use the input to set the environment
       name: ${{ inputs.environment }}
       url: "https://${{ env.AZURE_WEBAPP_NAME }}-${{ inputs.environment }}.azurewebsites.net/"
 
