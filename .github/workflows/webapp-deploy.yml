@@ -41,7 +41,7 @@ jobs:
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
         slot-name: ${{ inputs.environment }}
     - name: Check the deployed service URL
-      uses: jtalk/url-health-check-action@v1.2
+      uses: jtalk/url-health-check-action@v3.1
       with:
         url: https://${{ inputs.webapp-name }}-${{ inputs.environment }}.azurewebsites.net/|https://${{ inputs.webapp-name }}-${{ inputs.environment }}.azurewebsites.net/user/rob-derosa
         follow-redirect: no
