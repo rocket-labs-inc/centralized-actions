@@ -6,9 +6,9 @@ on:
         type: string
 
 env:
-  AZURE_WEBAPP_NAME: rob-actions-cd-demo
+  AZURE_WEBAPP_NAME: github-lookup
   AZURE_WEBAPP_PACKAGE_PATH: '.'
-  NODE_VERSION: '12.x'
+  NODE_VERSION: '16.x'
 
 jobs:
   webapp-deploy:
